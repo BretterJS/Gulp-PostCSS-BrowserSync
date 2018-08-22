@@ -59,9 +59,6 @@ gulp.task('es6', () => {
   
 
    gulp.task('watch', () => {
-  //   gulp.watch('src/*.scss', ['sass']);
-  //   gulp.watch('src/*html', ['html']);
-  //   gulp.watch('src/*js', ['es6']);
        gulp.watch('./src/html/*.html').on('change', browserSync.reload);
        gulp.watch('./src/css/*.css').on('change', browserSync.reload);
        gulp.watch('./src/js/*js').on('change', browserSync.reload);

@@ -59,7 +59,7 @@ gulp.task('es6', () => {
 
    gulp.task('watch', () => {
        gulp.watch('./src/html/*.html').on('change', browserSync.reload);
-       gulp.watch('./src/css/*.css').on('change', browserSync.reload);
+       gulp.watch('./src/css/*.css', ['css']).on('change', browserSync.reload);
        gulp.watch('./src/js/*js').on('change', browserSync.reload);
    });
 

@@ -2,7 +2,6 @@
 
 let postcss = require('gulp-postcss');
 let gulp = require('gulp');
-let autoprefixer = require('autoprefixer');
 let cssnano = require('cssnano');
 let sourcemaps = require('gulp-sourcemaps');
 let babel = require('gulp-babel');
